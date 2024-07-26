@@ -1,0 +1,53 @@
+/* Estilo inicial del elemento */
+.animate-slide {
+    position: relative;
+    animation: slideRight 1s ease-in-out forwards; /* Duración ajustada y función de temporización suave */
+}
+
+/* Definición de la animación */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+        opacity: 0; /* Opcional: comienza invisible */
+    }
+    to {
+        transform: translateX(0); /* Termina en la posición original */
+        opacity: 1; /* Opcional: termina visible */
+    }
+}
+
+/* Estilo inicial del elemento */
+.animate-slide-left {
+    position: relative;
+    animation: slideLeft 2s ease-in-out forwards; /* Duración y suavidad ajustadas */
+}
+
+/* Definición de la animación */
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+        opacity: 0; /* Opcional: comienza invisible */
+    }
+    to {
+        transform: translateX(0); /* Termina en la posición original */
+        opacity: 1; /* Opcional: termina visible */
+    }
+}
+
+/* Estilo inicial del elemento */
+.animate-slide-up {
+    position: relative;
+    animation: slideUp 2s ease-in-out forwards; /* Duración y suavidad ajustadas */
+}
+
+/* Definición de la animación */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%); /* Comienza fuera de la pantalla hacia abajo */
+        opacity: 0; /* Opcional: comienza invisible */
+    }
+    to {
+        transform: translateY(0); /* Termina en la posición original */
+        opacity: 1; /* Opcional: termina visible */
+    }
+}
